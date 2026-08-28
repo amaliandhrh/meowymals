@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>In-Seat Cinema Food Ordering System</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background: linear-gradient(135deg,#ffd6e0,#cde7ff,#fff0c9);
+    font-family:"Poppins", Arial, sans-serif;
+    min-height:100vh;
+}
+
+.main-container{
+    max-width:900px;
+    margin:auto;
+    padding-top:50px;
+}
+
+.hero-card{
+    background:rgba(255,255,255,0.92);
+    padding:35px;
+    border-radius:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.13);
+    text-align:center;
+}
+
+.title{
+    font-family: 'Fascinate Inline', cursive;
+    color:#5b4b8a;
+    font-size:48px;
+    font-weight:normal;
+    text-shadow:3px 3px 8px rgba(0,0,0,0.10);
+}
+.subtitle{
+    color:#6b7280;
+    margin-bottom:25px;
+}
+
+.hero-img{
+    width:250px;
+    height:auto;
+    border-radius:25px;
+    border:6px solid white;
+    background:white;
+    padding:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    margin-bottom:25px;
+}
+.menu-card{
+    background:#fff7fb;
+    padding:20px;
+    border-radius:25px;
+    transition:0.3s;
+    height:100%;
+    border:2px solid white;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+    background:#e0f7ff;
+}
+
+.menu-btn{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    font-weight:800;
+    font-size:18px;
+}
+
+.icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.small-text{
+    color:#6b7280;
+    font-size:14px;
+}
+</style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate Inline&display=swap" rel="stylesheet">
+<body>
+
+<div class="container main-container">
+
+<div class="hero-card">
+
+<h1 class="title">🍿 Eonni CINEbites 🍿</h1>
+<p class="subtitle">Order snacks, check status, and manage cinema food service easily.</p>
+
+<img src="images/logo.png" class="hero-img">
+
+<div class="row g-3">
+
+    <div class="col-md-4">
+        <a href="customer.php" class="menu-btn">
+            <div class="menu-card">
+                <div class="icon">🎬</div>
+                Customer Order
+                <div class="small-text">Place food order from seat</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a href="check_status.php" class="menu-btn">
+            <div class="menu-card">
+                <div class="icon">📦</div>
+                Check Status
+                <div class="small-text">View food and payment status</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a href="login.php" class="menu-btn">
+            <div class="menu-card">
+                <div class="icon">🔐</div>
+                Staff Login
+                <div class="small-text">Admin, kitchen and cashier access</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
